@@ -40,6 +40,17 @@
 (setq org-blank-before-new-entry (quote ((heading . auto)
                                          (plain-list-item . auto))))
 
+;(setq org-modules (quote (org-crypt org-id org-habit org-inlinetask org-protocol)))
+(setq org-modules (append org-modules (quote (org-habit))))
+(require 'org-habit)
+; global STYLE property values for completion
+(setq org-global-properties (quote (("STYLE_ALL" . "habit"))))
+; position the habit graph on the agenda to the right of the default
+(setq org-habit-graph-column 50)
+;(run-at-time "06:00" 86400 '(lambda () (setq org-habit-show-habits t)))
+
+
+
 ;; End doc.norang
 
 (setq org-mobile-directory "~/Dropbox/MobileOrg/")
