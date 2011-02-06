@@ -51,7 +51,7 @@
 
 
 
-;; End doc.norang
+;; End doc.norang changes
 
 (setq org-mobile-directory "~/Dropbox/MobileOrg/")
 (setq org-mobile-inbox-for-pull "~/Dropbox/usr/org/notes.org")
