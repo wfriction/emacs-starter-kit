@@ -62,9 +62,6 @@
 (setq evernote-enml-formatter-command '("w3m" "-dump" "-I" "UTF8" "-O" "UTF8")) ; option
 <<<<<<< HEAD
 ; (add-to-list 'load-path "<your load path>")
-=======
-(add-to-list 'load-path "<your load path>")
->>>>>>> a4f4b3c3ece2299941ae4f24d90ae6733d1a824e
 (require 'evernote-mode)
 (global-set-key "\C-cvc" 'evernote-create-note)
 (global-set-key "\C-cvo" 'evernote-open-note)
