@@ -60,7 +60,6 @@
 (require 'google-weather)
 (require 'org-google-weather)
 (setq evernote-enml-formatter-command '("w3m" "-dump" "-I" "UTF8" "-O" "UTF8")) ; option
-<<<<<<< HEAD
 ; (add-to-list 'load-path "<your load path>")
 (require 'evernote-mode)
 (global-set-key "\C-cvc" 'evernote-create-note)
