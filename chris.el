@@ -35,6 +35,7 @@
 ;; (setq org-odd-levels-only t)
 
 ;; Changes from doc.norang.ca/org-mode.html
+
 (setq org-treat-S-cursor-todo-selection-as-state-change nil)
 (setq org-cycle-separator-lines 0)
 (setq org-blank-before-new-entry (quote ((heading . auto)
@@ -49,9 +50,8 @@
 (setq org-habit-graph-column 50)
 ;(run-at-time "06:00" 86400 '(lambda () (setq org-habit-show-habits t)))
 
-
-
 ;; End doc.norang changes
+
 
 (setq org-mobile-directory "~/Dropbox/MobileOrg/")
 (setq org-mobile-inbox-for-pull "~/Dropbox/usr/org/notes.org")
@@ -59,6 +59,16 @@
 (add-to-list 'load-path "~/.emacs.d/src/google-weather-el")
 (require 'google-weather)
 (require 'org-google-weather)
+(setq evernote-enml-formatter-command '("w3m" "-dump" "-I" "UTF8" "-O" "UTF8")) ; option
+(add-to-list 'load-path "<your load path>")
+(require 'evernote-mode)
+(global-set-key "\C-cvc" 'evernote-create-note)
+(global-set-key "\C-cvo" 'evernote-open-note)
+(global-set-key "\C-cvs" 'evernote-search-notes)
+(global-set-key "\C-cvS" 'evernote-do-saved-search)
+(global-set-key "\C-cvw" 'evernote-write-note)
+(global-set-key "\C-cvp" 'evernote-post-region)
+(global-set-key "\C-cvb" 'evernote-browser)
 
 (setq-default indent-tabs-mode t) ;;CHANGED
 (setq-default tab-width 4)
