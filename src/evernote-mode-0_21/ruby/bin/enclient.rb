@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #! /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -sWKu
+=======
+#! /usr/bin/ruby1.8 -sWKu
+>>>>>>> a4f4b3c3ece2299941ae4f24d90ae6733d1a824e
 # -*- coding: utf-8 -*-
 
 #
