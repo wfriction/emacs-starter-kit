@@ -80,6 +80,7 @@
 
 (setq focus-follows-mouse t)
 (setq mouse-autoselect-window t)
+(setq ido-use-filename-at-point nil)
 
 (global-set-key "\C-x\C-a" 'magit-status)
 
