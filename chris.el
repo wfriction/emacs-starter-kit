@@ -98,7 +98,7 @@
 ;(auto-fill-mode 0)
 ; (setq comment-auto-fill-only-comments t)
 (setq visual-line-fringe-indicators '(left-curly-arrow nil))
-(add-hook 'text-mode-hook 'turn-off-auto-fill)
+; (add-hook 'text-mode-hook 'turn-off-auto-fill)
 (add-hook 'org-mode-hook 'turn-off-auto-fill)
 
 ;(setq visual-line-mode t)
@@ -155,7 +155,7 @@
 
 ;; http://stackoverflow.com/q/4506249/397649
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "google-chrome")
+      browse-url-generic-program "open")
 
 
 
